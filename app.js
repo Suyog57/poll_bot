@@ -135,10 +135,10 @@ client.on("message", async (message) => {
       return;
     }
     message.channel.send(`Question : ${polls[args[0] - 1].ques} `);
-    message.channel.send("Results of poll is :");
+    message.channel.send("Result of poll is :");
     message.channel.send(
-      `${polls[args[0] - 1].favour - 2} people are in the favour and ${
-        polls[args[0] - 1].oppose - 2
+      `${polls[args[0] - 1].favour} people are in the favour and ${
+        polls[args[0] - 1].oppose
       } oppose the event`
     );
   } else if (command == "poll-delete") {
